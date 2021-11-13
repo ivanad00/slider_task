@@ -51,6 +51,29 @@
   font-weight: bold;
 }
 
+.img {
+  height: 200px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+#top-row {
+  position: absolute;
+  width: 1230px;
+  height: 200px;
+  left: -120px;
+  top: 160px;
+}
+
+#bottom-row {
+  position: absolute;
+  width: 1080px;
+  height: 200px;
+  left: -130px;
+  bottom: 160px;
+}
+
+
 .footer-text {
   position: absolute;
   width: 245px;
