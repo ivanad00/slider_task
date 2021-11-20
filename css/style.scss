@@ -1,0 +1,184 @@
+$background: #dddddd;
+$font: "Source Sans Pro", sans-serif;
+$border: 0px 0px 5px 5px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: relative;
+  width: 940px;
+  margin: auto;
+  .header-container {
+    width: 941px;
+    height: 100px;
+    margin: auto;
+    .box-left {
+      width: 301px;
+      height: 100px;
+      background: $background;
+      border-radius: $border;
+      float: left;
+    }
+    .box-right {
+      width: 621px;
+      height: 100px;
+      float: right;
+      margin-left: 20px;
+      margin-top: -100px;
+      background: $background;
+      border-radius: $border;
+      .box-other-elements {
+        width: 245px;
+        height: 57px;
+        font-family: "HelveticaNeue", sans-serif;
+        font-size: 15px;
+        line-height: 18px;
+        display: flex;
+        align-items: flex-end;
+        color: white;
+        font-weight: bold;
+        margin-left: 80px;
+      }
+    }
+  }
+  .slider-container {
+    margin: 60px 0;
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    #top-row {
+      width: 1230px;
+      height: 200px;
+      display: flex;
+      margin-left: -400px;
+      overflow: visible;
+    }
+    #bottom-row {
+      width: 1080px;
+      height: 200px;
+      margin-top: 10px;
+      display: flex;
+      justify-content: end;
+      margin-top: 210px;
+      margin-left: -1650px;
+    }
+    .img {
+      height: 200px;
+      border-radius: 5px;
+      margin-left: 10px;
+    }
+  }
+  .arrows {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 329px;
+    
+    .left-arrow {
+      background-image: url("../assets/arrow-gray-left.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+      height: 60px;
+      width: 60px;
+      background-color: transparent;
+      border: 1px solid $background;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      &:hover {
+        background-image: url("../assets/arrow-blue-left.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+        height: 60px;
+        width: 60px;
+        border: 1px solid $background;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #134880;
+      }
+    }
+    .right-arrow {
+      background-image: url("../assets/arrow-gray-right.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      display: block;
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+      height: 60px;
+      width: 60px;
+      background-color: transparent;
+      border: 1px solid $background;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      &:hover {
+        background-image: url("../assets/arrow-blue-right.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        cursor: pointer;
+        margin: 0;
+        padding: 0;
+        height: 60px;
+        width: 60px;
+        background-color: transparent;
+        border: 1px solid $background;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #134880;
+      }
+    }
+  }
+  h1 {
+    width: 284px;
+    height: 120px;
+    font-family: $font;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    align-items: flex-end;
+    letter-spacing: -0.2px;
+    color: #134880;
+    margin-bottom: 20px;
+  }
+  .text {
+    width: 300.93px;
+    height: 156px;
+    font-family: $font;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.2px;
+    color: #484a4c;
+  }
+  .footer-text {
+    width: 245px;
+    height: 60px;
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    font-weight: bold;
+    margin-left: 80px;
+    .footer {
+      width: 941px;
+      height: 100px;
+      background: $background;
+      border-radius: 5px 5px 0px 0px;
+      margin: auto;
+    }
+  }
+}
